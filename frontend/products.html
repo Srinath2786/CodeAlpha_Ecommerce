@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | ShopWave</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="page-shell">
+    <div class="page-header" style="padding-left:0;padding-right:0;">
+      <span class="eyebrow">The collection</span>
+      <h1>Find something good.</h1>
+      <p>Browse practical upgrades, small luxuries, and thoughtful gifts selected for everyday life.</p>
+    </div>
+
+    <div class="toolbar">
+      <form id="search-form">
+        <input class="input" id="search-input" placeholder="Search products..." />
+        <button type="submit" class="btn btn-secondary">Search</button>
+      </form>
+      <select class="input" id="category-select">
+        <option value="">All Categories</option>
+      </select>
+      <select class="input" id="sort-select">
+        <option value="createdAt,desc">Newest</option>
+        <option value="price,asc">Price: Low to High</option>
+        <option value="price,desc">Price: High to Low</option>
+        <option value="name,asc">Name: A to Z</option>
+      </select>
+    </div>
+
+    <div id="results"></div>
+  </main>
+
+  <footer class="site-footer"><div><strong>ShopWave</strong><p>Thoughtful finds for everyday living.</p></div><nav class="footer-links"><a href="products.html">Shop</a><a href="profile.html">Account</a><a href="orders.html">Orders</a></nav></footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/pages/products.js"></script>
+</body>
+</html>

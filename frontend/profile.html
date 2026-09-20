@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile | ShopWave</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="page-shell profile-page">
+    <aside class="profile-summary">
+      <div class="avatar">U</div>
+      <p class="eyebrow" style="color:#f4c978;">ShopWave account</p>
+      <h2 id="profile-name">Your account</h2>
+      <p id="profile-role">Customer</p>
+      <p id="member-since" class="profile-member"></p>
+      <div class="profile-quick-links"><a href="account/dashboard.html">Dashboard</a><a href="orders.html">Orders</a><a href="wishlist.html">Wishlist</a></div>
+    </aside>
+    <div>
+      <div class="profile-heading"><span class="eyebrow">Personal information</span><h1>My Profile</h1><p>Keep your details ready for a smoother ShopWave checkout.</p></div>
+      <div id="error-mount"></div>
+      <div id="success-mount"></div>
+      <section class="card card-pad profile-section"><h2>Personal information</h2><form id="profile-form">
+        <div class="field">
+          <label for="email">Email</label>
+          <input class="input" id="email" disabled style="background:var(--gray-50);color:var(--gray-500);" />
+        </div>
+        <div class="field">
+          <label for="fullName">Full name</label>
+          <input class="input" id="fullName" required />
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input class="input" id="phone" />
+        </div>
+        <div class="field">
+          <label for="address">Address</label>
+          <textarea class="input" id="address" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Save changes</button>
+      </form></section>
+      <section class="profile-stat-grid"><a class="profile-stat" href="orders.html"><span>Orders</span><strong id="profile-orders">-</strong></a><a class="profile-stat" href="wishlist.html"><span>Wishlist</span><strong id="profile-wishlist">-</strong></a><a class="profile-stat" href="products.html"><span>Cart items</span><strong id="profile-cart">-</strong></a></section>
+      <section class="card card-pad profile-section"><h2>Security</h2><p class="section-intro">Your password is protected with bcrypt hashing. Password changes are managed securely through the authenticated account flow.</p><a class="btn btn-secondary" href="account/settings.html">Open account settings</a></section>
+      <section class="card card-pad profile-section danger-zone"><h2>Account</h2><p class="section-intro">Sign out of this device when you are finished.</p><button class="btn btn-danger" id="profile-logout">Log out</button></section>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div><strong>ShopWave</strong><p>Thoughtful finds for everyday living.</p></div><nav class="footer-links"><a href="products.html">Shop</a><a href="profile.html">Account</a><a href="orders.html">Orders</a></nav></footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/pages/profile.js"></script>
+  <script>document.getElementById('profile-logout').addEventListener('click', () => auth.logout());</script>
+</body>
+</html>

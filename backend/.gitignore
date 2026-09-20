@@ -1,0 +1,12 @@
+node_modules/
+.env
+*.env.local
+db/*.db
+db/*.db-shm
+db/*.db-wal
+ecommerce.db
+*.db
+*.db-shm
+*.db-wal
+*.log
+.DS_Store

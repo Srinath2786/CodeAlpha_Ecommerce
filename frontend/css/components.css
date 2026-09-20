@@ -1,0 +1,3 @@
+/* Shared component additions. Keep page-specific rules in style.css or dashboard.css. */
+.dashboard-card { display: flex; flex-direction: column; gap: 8px; }
+.dashboard-card span { color: var(--gray-600); font-size: .9rem; }

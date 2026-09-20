@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopWave | Better things, beautifully found</title>
+  <script>tailwind = { config: { corePlugins: { preflight: false } } };</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main>
+    <section class="landing-hero relative overflow-hidden">
+      <div class="landing-hero-glow landing-hero-glow-one"></div><div class="landing-hero-glow landing-hero-glow-two"></div>
+      <div class="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[1fr_0.9fr] lg:px-10 lg:py-28">
+        <div class="max-w-2xl">
+          <div class="mb-6 inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-[#f4c978] backdrop-blur-sm"><span class="h-2 w-2 rounded-full bg-[#f4c978]"></span>The everyday edit</div>
+          <h1 class="!mb-6 !max-w-2xl !text-5xl !leading-[0.96] !tracking-[-0.04em] sm:!text-6xl lg:!text-8xl">Beautifully useful. <em class="font-normal text-[#f4c978]">Naturally yours.</em></h1>
+          <p class="!m-0 !max-w-xl !text-lg !leading-8 text-[#d6eee7]">A considered collection of things that make everyday life feel a little better, from smart desk upgrades to quiet home rituals.</p>
+          <div class="mt-9 flex flex-wrap gap-3"><a href="products.html" class="btn !bg-[#f4c978] !px-7 !py-3 !text-[#172522]">Shop the edit <span aria-hidden="true">→</span></a><a href="categories.html" class="btn !border !border-white/30 !bg-white/10 !px-7 !py-3 !text-white backdrop-blur-sm">Explore categories</a></div>
+          <div class="mt-12 flex flex-wrap gap-8 border-t border-white/15 pt-6 text-sm text-[#d6eee7]"><span><strong class="block text-xl text-white">4.9/5</strong>customer love</span><span><strong class="block text-xl text-white">24h</strong>quick dispatch</span><span><strong class="block text-xl text-white">100%</strong>considered</span></div>
+        </div>
+        <div class="landing-hero-image relative mx-auto w-full max-w-lg lg:rotate-2">
+          <div class="absolute -inset-3 rounded-[2rem] border border-[#f4c978]/30"></div><img class="relative aspect-[4/5] w-full rounded-[1.7rem] object-cover shadow-2xl" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&amp;fit=crop&amp;w=1000&amp;q=90" alt="Thoughtfully arranged ShopWave products" />
+          <div class="absolute -bottom-5 -left-5 rounded-2xl border border-white/20 bg-[#f7f4ed] px-5 py-4 text-[#172522] shadow-xl"><span class="block text-xs font-bold uppercase tracking-widest text-[#187c69]">Curated today</span><strong class="text-lg">Small joys, well chosen.</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section">
+      <span class="eyebrow">Shop by mood</span>
+      <h2 class="display-title">Find your next favorite.</h2>
+      <p class="section-intro">From smart everyday upgrades to small luxuries, start with a category and let the good stuff find you.</p>
+      <div class="category-rail">
+        <a class="category-tile" href="products.html?categoryId=1" style="background-image:url('https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&amp;fit=crop&amp;w=700&amp;q=80')"><span>Tech &amp; desk</span></a>
+        <a class="category-tile" href="products.html?categoryId=2" style="background-image:url('https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&amp;fit=crop&amp;w=700&amp;q=80')"><span>Wear it well</span></a>
+        <a class="category-tile" href="products.html?categoryId=3" style="background-image:url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&amp;fit=crop&amp;w=700&amp;q=80')"><span>Home rituals</span></a>
+        <a class="category-tile" href="products.html?categoryId=4" style="background-image:url('https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&amp;fit=crop&amp;w=700&amp;q=80')"><span>Good reads</span></a>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="ShopWave benefits">
+      <div><strong>Trusted shopping</strong><span>Curated products, clear prices</span></div>
+      <div><strong>Secure payment</strong><span>Protected checkout every time</span></div>
+      <div><strong>Fast delivery</strong><span>Reliable dispatch and updates</span></div>
+    </section>
+
+    <section class="home-section">
+      <div class="section-title">
+        <div><span class="eyebrow">Freshly selected</span><h2 class="display-title" style="font-size:2.2rem;margin-top:6px;">New arrivals</h2></div>
+        <a href="products.html" class="link-more">View all &rarr;</a>
+      </div>
+      <div id="featured"></div>
+    </section>
+
+    <section class="home-section collection-section">
+      <div class="section-title"><div><span class="eyebrow">The ShopWave edit</span><h2 class="display-title">Featured collection</h2></div><a href="products.html" class="link-more">Explore all &rarr;</a></div>
+      <div class="collection-grid">
+        <a href="products.html?categoryId=1" class="collection-card collection-card-tech"><span>Work smarter</span><strong>Desk upgrades</strong></a>
+        <a href="products.html?categoryId=3" class="collection-card collection-card-home"><span>Make room</span><strong>Home rituals</strong></a>
+        <a href="products.html?categoryId=2" class="collection-card collection-card-style"><span>Wear it well</span><strong>Everyday style</strong></a>
+      </div>
+    </section>
+
+    <section class="why-section">
+      <div><span class="eyebrow" style="color:#f4c978;">The better way to browse</span><h2>Why ShopWave?</h2><p>Less noise, more things you will actually use. Every part of the experience is designed to make choosing easier.</p></div>
+      <div class="why-list"><strong>Secure</strong><strong>Quality</strong><strong>Simple checkout</strong><strong>Human support</strong></div>
+    </section>
+
+    <section class="newsletter-section home-section">
+      <div><span class="eyebrow">A note worth opening</span><h2 class="display-title">Good finds, occasionally.</h2><p class="section-intro">New arrivals, thoughtful edits, and useful offers. No inbox clutter.</p></div>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='You are on the list';"><input class="input" type="email" required placeholder="Your email address" aria-label="Email address"><button class="btn btn-primary" type="submit">Join the list</button></form>
+    </section>
+
+    <section class="promo-band">
+      <div class="promo-band-inner">
+        <div><span class="eyebrow" style="color:#f4c978;">A little more considered</span><h2>Make space for better.</h2><p>Thoughtful picks, clear prices, and a checkout that keeps things simple.</p><a href="register.html" class="btn" style="background:#f4c978;color:var(--ink);">Join ShopWave</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="home-footer">ShopWave &middot; Thoughtful finds for everyday living.</footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/pages/home.js"></script>
+</body>
+</html>

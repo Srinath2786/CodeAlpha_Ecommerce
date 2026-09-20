@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShopWave | Account Dashboard</title>
+  <link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <main class="container dashboard-layout">
+    <aside class="dashboard-sidebar"><span class="eyebrow">Your account</span><h2>Dashboard</h2><nav><a class="active" href="dashboard.html">Overview</a><a href="../products.html">Shop</a><a href="orders.html">Orders</a><a href="wishlist.html">Wishlist</a><a href="profile.html">Profile</a><a href="settings.html">Settings</a><button id="dashboard-logout" type="button">Log out</button></nav></aside>
+    <section class="dashboard-page">
+    <p class="eyebrow">Your ShopWave</p><h1 class="display-title">Good morning, <span id="dashboard-name">there</span>.</h1>
+    <p id="dashboard-welcome">Here's your shopping overview.</p>
+    <div class="dashboard-stats">
+      <a class="dashboard-stat" href="orders.html"><span>Orders</span><strong id="stat-orders">-</strong></a>
+      <a class="dashboard-stat" href="wishlist.html"><span>Wishlist</span><strong id="stat-wishlist">-</strong></a>
+      <a class="dashboard-stat" href="../cart.html"><span>Cart items</span><strong id="stat-cart">-</strong></a>
+      <div class="dashboard-stat"><span>Total spent</span><strong id="stat-spent">-</strong></div>
+    </div>
+    <section class="dashboard-section"><div class="section-title"><h2>Recent orders</h2><a href="orders.html" class="link-more">View all &rarr;</a></div><div id="recent-orders" class="dashboard-list"><p>Loading orders...</p></div></section>
+    <section class="dashboard-section"><div class="section-title"><h2>Recommended for you</h2><a href="../products.html" class="link-more">Shop all &rarr;</a></div><div id="recommendations" class="dashboard-products"><p>Loading recommendations...</p></div></section>
+    </section>
+  </main>
+  <script src="../js/api.js"></script><script src="../js/auth.js"></script><script src="../js/ui.js"></script><script src="../js/navbar.js"></script><script src="../js/dashboard.js"></script><script>document.getElementById('dashboard-logout').addEventListener('click', () => auth.logout());</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log in | ShopWave</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="auth-page auth-page-wide">
+    <aside class="auth-aside">
+      <span class="eyebrow" style="color:#f4c978;">Welcome to ShopWave</span>
+      <h2>Come on in.</h2>
+      <p>Your saved cart, order history, and a more personal way to shop are waiting.</p>
+    </aside>
+    <div class="card card-pad">
+      <h1 style="margin:0 0 4px;font-size:1.5rem;">Welcome back</h1>
+      <p style="color:var(--gray-500);font-size:0.9rem;margin:0 0 20px;">Log in to continue shopping.</p>
+
+      <div id="error-mount"></div>
+
+      <form id="login-form">
+        <div class="field">
+          <label for="email">Email</label>
+          <input class="input" type="email" id="email" required placeholder="you@example.com" />
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input class="input" type="password" id="password" required placeholder="••••••••" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Log in</button>
+      </form>
+
+      <p style="text-align:center;font-size:0.875rem;color:var(--gray-500);margin-top:20px;">
+        Don't have an account? <a href="register.html" style="color:var(--brand-700);font-weight:600;">Sign up</a>
+      </p>
+
+    </div>
+  </main>
+
+  <footer class="site-footer"><div><strong>ShopWave</strong><p>Thoughtful finds for everyday living.</p></div><nav class="footer-links"><a href="products.html">Shop</a><a href="register.html">Join us</a></nav></footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/pages/login.js"></script>
+</body>
+</html>

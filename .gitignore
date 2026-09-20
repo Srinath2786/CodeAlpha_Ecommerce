@@ -1,0 +1,9 @@
+backend/.env
+**/node_modules/
+node-v20/
+screenshot/
+*.db
+*.db-shm
+*.db-wal
+*.log
+.DS_Store

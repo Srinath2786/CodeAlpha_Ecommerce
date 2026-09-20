@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShopWave | Categories</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <main class="page-shell">
+    <div class="page-header" style="padding-left:0;padding-right:0;"><span class="eyebrow">Browse by mood</span><h1>Categories</h1><p>Start with a category and find something worth bringing home.</p></div>
+    <div id="categories" class="category-directory"><div class="spinner-wrap"><div class="spinner"></div><span>Loading categories...</span></div></div>
+  </main>
+  <footer class="site-footer"><div><strong>ShopWave</strong><p>Thoughtful finds for everyday living.</p></div></footer>
+  <script src="js/api.js"></script><script src="js/auth.js"></script><script src="js/ui.js"></script><script src="js/navbar.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const mount = document.getElementById('categories');
+      try {
+        const categories = await api.listCategories();
+        mount.innerHTML = categories.length ? categories.map((category) => `<a class="category-directory-card" href="products.html?categoryId=${category.id}"><span>${escapeHtml(category.name)}</span><strong>Explore collection &rarr;</strong></a>`).join('') : emptyStateHtml('No categories yet', 'Check back soon.');
+      } catch (error) { mount.innerHTML = errorBannerHtml(error.message); }
+    });
+  </script>
+</body>
+</html>

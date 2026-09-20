@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create account | ShopWave</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main class="auth-page auth-page-wide">
+    <aside class="auth-aside" style="background-image:linear-gradient(0deg,rgba(16,59,54,.96),rgba(16,59,54,.12)),url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=1000&amp;q=85');">
+      <span class="eyebrow" style="color:#f4c978;">A better way to browse</span>
+      <h2>Make it yours.</h2>
+      <p>Create an account to save your details, move faster at checkout, and keep every order close.</p>
+    </aside>
+    <div class="card card-pad">
+      <h1 style="margin:0 0 4px;font-size:1.5rem;">Create your account</h1>
+      <p style="color:var(--gray-500);font-size:0.9rem;margin:0 0 20px;">Join to start shopping.</p>
+
+      <div id="error-mount"></div>
+
+      <form id="register-form">
+        <div class="field">
+          <label for="fullName">Full name</label>
+          <input class="input" id="fullName" required />
+          <div class="field-error hidden" id="err-fullName"></div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input class="input" type="email" id="email" required />
+          <div class="field-error hidden" id="err-email"></div>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input class="input" type="password" id="password" required minlength="6" />
+          <div class="field-error hidden" id="err-password"></div>
+        </div>
+        <div class="field">
+          <label for="phone">Phone (optional)</label>
+          <input class="input" id="phone" />
+        </div>
+        <div class="field">
+          <label for="address">Address (optional)</label>
+          <input class="input" id="address" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Create account</button>
+      </form>
+
+      <p style="text-align:center;font-size:0.875rem;color:var(--gray-500);margin-top:20px;">
+        Already have an account? <a href="login.html" style="color:var(--brand-700);font-weight:600;">Log in</a>
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div><strong>ShopWave</strong><p>Thoughtful finds for everyday living.</p></div><nav class="footer-links"><a href="products.html">Shop</a><a href="login.html">Log in</a></nav></footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/pages/register.js"></script>
+</body>
+</html>
