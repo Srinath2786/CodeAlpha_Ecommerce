@@ -4,7 +4,7 @@ ShopWave is a full-stack e-commerce platform built with vanilla HTML/CSS/JavaScr
 
 ## Features
 
-- Product search, category filtering, price filters, stock filtering, sorting, and pagination
+- Product search, category filtering, price filters, stock filtering, sorting, and pagination.
 - Product details with wishlist, reviews, ratings, and recently viewed products
 - Authenticated cart with stock validation and transactional checkout
 - Orders, order history, order details, and admin status management
